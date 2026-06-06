@@ -1,0 +1,105 @@
+
+> blog-appp@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.3.8:3000
+- Environments: .env
+✓ Ready in 11.4s
+Creating turbopack project {
+  dir: 'C:\\Users\\user\\Desktop\\blog app\\blog-appp',
+  testMode: true
+}
+○ Compiling proxy ...
+
+○ Compiling /setting ...
+ GET /setting 200 in 11.4s (next.js: 7.1s, application-code: 4.3s)
+ GET / 200 in 1064ms (next.js: 398ms, application-code: 666ms)
+ GET /api/auth/session 200 in 3.7s (next.js: 3.6s, application-code: 77ms)
+ GET /api/auth/session 200 in 38ms (next.js: 15ms, application-code: 22ms)
+ GET / 200 in 221ms (next.js: 14ms, application-code: 208ms)
+ GET /api/auth/session 200 in 89ms (next.js: 36ms, application-code: 54ms)
+ GET /api/auth/session 200 in 44ms (next.js: 8ms, application-code: 36ms)
+ GET / 200 in 34ms (next.js: 9ms, application-code: 24ms)
+ GET / 200 in 160ms (next.js: 9ms, application-code: 151ms)
+ GET /blog 200 in 5.2s (next.js: 1869ms, application-code: 3.3s)
+ GET /about 404 in 213ms (next.js: 137ms, application-code: 75ms)
+ GET /about 404 in 114ms (next.js: 10ms, application-code: 103ms)
+ GET /api/auth/session 200 in 75ms (next.js: 27ms, application-code: 47ms)
+ GET /api/auth/session 200 in 68ms (next.js: 6ms, application-code: 62ms)
+ GET /blog 200 in 692ms (next.js: 6ms, application-code: 686ms)
+ GET /api/auth/session 200 in 50ms (next.js: 25ms, application-code: 24ms)
+ GET /api/auth/session 200 in 35ms (next.js: 4ms, application-code: 31ms)
+ GET /profile/cmppgelfc0007k85a0l1h0qkf 200 in 4.2s (next.js: 1534ms, application-code: 2.7s)
+ GET /setting 200 in 158ms (next.js: 15ms, application-code: 144ms)
+timestamp=2026-05-30T12:50:04.360Z level=WARN fiber=#8 message="Executing an Effect versioned 3.20.0 with a Runtime of version 3.17.7, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service"
+timestamp=2026-05-30T12:50:04.364Z level=WARN fiber=#8 message="Executing an Effect versioned 3.20.0 with a Runtime of version 3.17.7, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service"
+timestamp=2026-05-30T12:50:04.365Z level=WARN fiber=#8 message="Executing an Effect versioned 3.20.0 with a Runtime of version 3.17.7, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service"
+timestamp=2026-05-30T12:50:04.367Z level=WARN fiber=#8 message="Executing an Effect versioned 3.20.0 with a Runtime of version 3.17.7, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service"
+timestamp=2026-05-30T12:50:04.369Z level=WARN fiber=#8 message="Executing an Effect versioned 3.20.0 with a Runtime of version 3.17.7, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service"
+timestamp=2026-05-30T12:50:04.371Z level=WARN fiber=#8 message="Executing an Effect versioned 3.20.0 with a Runtime of version 3.17.7, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service"
+timestamp=2026-05-30T12:50:04.372Z level=WARN fiber=#8 message="Executing an Effect versioned 3.20.0 with a Runtime of version 3.17.7, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service"
+timestamp=2026-05-30T12:50:04.374Z level=WARN fiber=#8 message="Executing an Effect versioned 3.20.0 with a Runtime of version 3.17.7, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service"
+[13:50:04.426] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.430] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.434] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.436] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.438] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.441] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.443] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.445] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.447] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.451] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.453] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.455] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.457] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.459] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.461] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.463] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.466] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.469] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.471] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.476] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.478] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.480] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.485] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.487] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.489] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.491] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.493] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.495] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.497] WARN (#13): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+ GET /api/uploadthing 200 in 2.0s (next.js: 1858ms, application-code: 182ms)
+[13:50:04.562] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.565] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.570] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.573] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.577] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.579] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.585] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.587] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.590] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.593] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.595] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.596] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.601] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.603] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.606] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.610] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.613] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.619] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.623] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.628] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.630] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.635] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.638] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.641] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.643] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.644] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.647] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.650] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+[13:50:04.652] WARN (#16): Executing an Effect versioned 3.17.7 with a Runtime of version 3.20.0, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service
+ GET /api/uploadthing 200 in 118ms (next.js: 8ms, application-code: 110ms)
+ GET /api/profile 200 in 3.1s (next.js: 113ms, application-code: 3.0s)
+ GET /api/profile 200 in 142ms (next.js: 5ms, application-code: 137ms)
