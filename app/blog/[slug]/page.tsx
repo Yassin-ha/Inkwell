@@ -4,6 +4,7 @@ import { auth } from "@/auth";
 import Comments from "@/components/blog/Comments";
 import LikeButton from "@/components/blog/LikeButton";
 import Navbar from "@/components/home/Nav/Navbar";
+import type { Tag } from "@prisma/client";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -74,7 +75,7 @@ const BlogPostPage = async ({ params }: PageProps) => {
                 </Link>
 
                 <div className="mt-8 flex flex-wrap gap-2">
-                    {post.tags.map((tag) => (
+                    {post.tags.map((tag: Tag) => (
                         <Link
                             key={tag.id}
                             href={`/blog?tag=${encodeURIComponent(tag.name)}`}
@@ -159,4 +160,3 @@ const BlogPostPage = async ({ params }: PageProps) => {
 };
 
 export default BlogPostPage;
-
