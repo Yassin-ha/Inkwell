@@ -92,7 +92,7 @@ const BlogPostPage = async ({ params }: PageProps) => {
 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2">
-                    {post.tags.map((tag) => (
+                    {post.tags.map((tag: { id: string; name: string }) => (
                         <Link
                             key={tag.id}
                             href={`/blog?tag=${encodeURIComponent(tag.name)}`}
