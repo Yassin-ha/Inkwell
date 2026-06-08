@@ -7,6 +7,7 @@ import Navbar from "@/components/home/Nav/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Tag } from "@/types/types";
 
 type PageProps = {
     params: Promise<{ slug: string }>;
@@ -92,7 +93,7 @@ const BlogPostPage = async ({ params }: PageProps) => {
 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2">
-                    {post.tags.map((tag: { id: string; name: string }) => (
+                    {post.tags.map((tag: Tag) => (
                         <Link
                             key={tag.id}
                             href={`/blog?tag=${encodeURIComponent(tag.name)}`}

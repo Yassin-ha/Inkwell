@@ -4,18 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import DeletePostButton from "@/components/dashboard/DeletePostButton";
 import PublishToggle from "@/components/dashboard/PublishToggle";
-
-type Post = {
-    id: string;
-    title: string;
-    slug: string;
-    excerpt: string | null;
-    published: boolean;
-    coverImage: string | null;
-    createdAt: string;
-    updatedAt: string;
-    tags: { id: string; name: string }[];
-};
+import { Post, Tag } from "@/types/types"
 
 type Filter = "all" | "published" | "draft";
 
@@ -148,7 +137,7 @@ const MyPostsPage = () => {
                 </div>
             ) : (
                 <div className="space-y-3">
-                    {filtered.map((post) => (
+                    {filtered.map((post: Post) => (
                         <div
                             key={post.id}
                             className="group bg-white border border-[#E0DDD8] hover:border-[#CCC] rounded-2xl px-6 py-5 flex items-start justify-between gap-6 transition-all"
@@ -190,7 +179,7 @@ const MyPostsPage = () => {
                                                 ? "Published"
                                                 : "Draft"}
                                         </span>
-                                        {post.tags.map((tag) => (
+                                        {post.tags.map((tag: Tag) => (
                                             <span
                                                 key={tag.id}
                                                 className="text-xs px-2 py-0.5 rounded-full bg-[#F9F7F4] text-[#666] border border-[#E0DDD8] font-sans"

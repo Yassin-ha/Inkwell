@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/home/Nav/Navbar";
+import { Post, Tag } from "@/types/types";
 
 type PageProps = {
     params: Promise<{ id: string }>;
@@ -155,7 +156,7 @@ const ProfilePage = async ({ params }: PageProps) => {
                                         label: "Likes received",
                                         value: totalLikesReceived,
                                     },
-                                ].map((stat) => (
+                                ].map((stat: { label: string; value: number }) => (
                                     <div key={stat.label}>
                                         <p
                                             className="text-2xl font-bold text-[#1A1A1A]"
@@ -214,7 +215,7 @@ const ProfilePage = async ({ params }: PageProps) => {
                                             )}
                                             <div className="min-w-0 flex-1">
                                                 <div className="mb-1.5 flex flex-wrap gap-1.5">
-                                                    {post.tags.slice(0, 2).map((tag) => (
+                                                    {post.tags.slice(0, 2).map((tag: Tag) => (
                                                         <span
                                                             key={tag.id}
                                                             className="rounded-full bg-[#F0EDE8] px-2 py-0.5 text-xs text-[#8B6F4E] font-sans"

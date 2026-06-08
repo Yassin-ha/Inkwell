@@ -3,6 +3,7 @@ import { auth } from "@/auth";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/home/Nav/Navbar";
+import { Tag } from "@/types/types";
 
 const BlogPage = async ({
     searchParams,
@@ -163,7 +164,7 @@ const BlogPage = async ({
                                             <div className="flex flex-wrap gap-1.5 mb-3">
                                                 {post.tags
                                                     .slice(0, 2)
-                                                    .map((tag) => (
+                                                    .map((tag: Tag) => (
                                                         <span
                                                             key={tag.id}
                                                             className="text-xs px-2.5 py-0.5 rounded-full bg-[#F0EDE8] text-[#8B6F4E] font-sans"

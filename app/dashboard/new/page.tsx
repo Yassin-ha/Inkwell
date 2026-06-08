@@ -51,7 +51,7 @@ const NewPostPage = () => {
 
         const tagList = tags
             .split(",")
-            .map((t) => t.trim())
+            .map((t: string) => t.trim())
             .filter(Boolean);
 
         const res = await fetch("/api/posts", {
