@@ -3,7 +3,7 @@ import { auth } from "@/auth";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/home/Nav/Navbar";
-import { Tag } from "@/types/types";
+import { Post, Tag } from "@/types/types";
 
 const BlogPage = async ({
     searchParams,
@@ -86,7 +86,7 @@ const BlogPage = async ({
                     >
                         All
                     </Link>
-                    {tags.map((tag) => (
+                    {tags.map((tag: Tag) => (
                         <Link
                             key={tag.id}
                             href={`/blog?tag=${tag.name}`}
