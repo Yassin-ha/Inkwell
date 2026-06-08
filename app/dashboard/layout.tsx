@@ -4,6 +4,12 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import SignOutButton from "@/components/SignOutButton";
 
+type DashboardNavItem = {
+    href: string;
+    label: string;
+    icon: string;
+};
+
 const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
     const session = await auth();
 
@@ -76,7 +82,7 @@ const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
                                 label: "My Posts",
                                 icon: "≡",
                             },
-                        ].map((item) => (
+                        ].map((item: DashboardNavItem) => (
                             <Link
                                 key={item.href}
                                 href={item.href}

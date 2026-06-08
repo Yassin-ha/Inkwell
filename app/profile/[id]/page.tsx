@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/home/Nav/Navbar";
-import { Post, Tag } from "@/types/types";
+import { Tag } from "@/types/types";
 
 type PageProps = {
     params: Promise<{ id: string }>;
@@ -35,9 +35,11 @@ const ProfilePage = async ({ params }: PageProps) => {
     const isOwner = session?.user?.id === user.id;
     const isAuthor = user.role === "ADMIN";
     const totalLikesReceived = user.posts.reduce(
-        (acc, post) => acc + post._count.likes,
+        (acc: number, post: (typeof user.posts)[number]) =>
+            acc + post._count.likes,
         0,
     );
+    type ProfilePost = (typeof user.posts)[number];
 
     return (
         <div
@@ -195,7 +197,7 @@ const ProfilePage = async ({ params }: PageProps) => {
                             </p>
                         ) : (
                             <div className="space-y-4">
-                                {user.posts.map((post) => (
+                                {user.posts.map((post: ProfilePost) => (
                                     <Link key={post.id} href={`/blog/${post.slug}`}>
                                         <div className="group flex items-start gap-5 rounded-2xl border border-[#E0DDD8] bg-white p-5 transition-all hover:border-[#C4B99A] hover:shadow-sm">
                                             {post.coverImage ? (

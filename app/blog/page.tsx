@@ -3,7 +3,7 @@ import { auth } from "@/auth";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/home/Nav/Navbar";
-import { Post, Tag } from "@/types/types";
+import { Tag } from "@/types/types";
 
 const BlogPage = async ({
     searchParams,
@@ -46,6 +46,7 @@ const BlogPage = async ({
     ]);
 
     const totalPages = Math.ceil(total / perPage);
+    type BlogPost = (typeof posts)[number];
 
     return (
         <div
@@ -127,7 +128,7 @@ const BlogPage = async ({
                     </div>
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {posts.map((post, i) => (
+                        {posts.map((post: BlogPost, i: number) => (
                             <article
                                 key={post.id}
                                 className={`group ${i === 0 && currentPage === 1 ? "md:col-span-2 lg:col-span-3" : ""}`}
@@ -280,7 +281,7 @@ const BlogPage = async ({
                         {Array.from(
                             { length: totalPages },
                             (_, i) => i + 1,
-                        ).map((page) => (
+                        ).map((page: number) => (
                             <Link
                                 key={page}
                                 href={`/blog?${currentTag !== "all" ? `tag=${currentTag}&` : ""}page=${page}`}

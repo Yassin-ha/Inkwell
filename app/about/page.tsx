@@ -3,6 +3,22 @@ import { auth } from "@/auth";
 import Link from "next/link";
 import Navbar from "@/components/home/Nav/Navbar";
 
+type AboutStat = {
+    value: number | string;
+    label: string;
+};
+
+type AboutStep = {
+    step: string;
+    title: string;
+    description: string;
+};
+
+type TechItem = {
+    name: string;
+    desc: string;
+};
+
 const AboutPage = async () => {
     const session = await auth();
 
@@ -52,7 +68,7 @@ const AboutPage = async () => {
                         { value: totalPosts, label: "Articles published" },
                         { value: totalAuthors, label: "Authors writing" },
                         { value: "100%", label: "Free to read" },
-                    ].map((stat) => (
+                    ].map((stat: AboutStat) => (
                         <div key={stat.label}>
                             <p
                                 className="text-4xl font-bold text-[#1A1A1A] mb-1"
@@ -153,7 +169,7 @@ const AboutPage = async () => {
                                 description:
                                     "Every author gets a public profile page showcasing their articles, stats, and social links. Your writing becomes your portfolio.",
                             },
-                        ].map((item) => (
+                        ].map((item: AboutStep) => (
                             <div key={item.step} className="flex gap-6">
                                 <div
                                     className="text-3xl font-bold text-[#E0DDD8] shrink-0 w-12"
@@ -225,7 +241,7 @@ const AboutPage = async () => {
                                 desc: "Utility-first styling",
                             },
                             { name: "Vercel", desc: "Deployment & hosting" },
-                        ].map((tech) => (
+                        ].map((tech: TechItem) => (
                             <div
                                 key={tech.name}
                                 className="bg-white border border-[#E0DDD8] rounded-xl p-4 hover:border-[#C4B99A] transition-colors"

@@ -30,6 +30,8 @@ const DashboardPage = async () => {
         { label: "Published", value: publishedPosts, icon: "◉" },
         { label: "Drafts", value: draftPosts, icon: "◎" },
     ];
+    type DashboardStat = (typeof stats)[number];
+    type RecentPost = (typeof recentPosts)[number];
 
     return (
         <div className="px-10 py-10">
@@ -61,7 +63,7 @@ const DashboardPage = async () => {
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-5 mb-10">
-                {stats.map((stat) => (
+                {stats.map((stat: DashboardStat) => (
                     <div
                         key={stat.label}
                         className="bg-white border border-[#E0DDD8] rounded-2xl p-6"
@@ -121,7 +123,7 @@ const DashboardPage = async () => {
                     </div>
                 ) : (
                     <div className="divide-y divide-[#E0DDD8]">
-                        {recentPosts.map((post) => (
+                        {recentPosts.map((post: RecentPost) => (
                             <div
                                 key={post.id}
                                 className="px-6 py-4 flex items-center justify-between gap-4 hover:bg-[#F9F7F4] transition-colors group"

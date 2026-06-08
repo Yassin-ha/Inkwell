@@ -77,7 +77,7 @@ const Comments = ({
 
         if (parentId) {
             setComments((current) =>
-                current.map((comment) =>
+                current.map((comment: CommentItem) =>
                     comment.id === parentId
                         ? {
                               ...comment,
@@ -187,7 +187,7 @@ const Comments = ({
 
                 {(comment.replies?.length ?? 0) > 0 && (
                     <div className="mt-5 space-y-5">
-                        {comment.replies?.map((reply) =>
+                        {comment.replies?.map((reply: CommentItem) =>
                             renderComment(reply, true),
                         )}
                     </div>
@@ -262,7 +262,9 @@ const Comments = ({
                         No comments yet.
                     </p>
                 ) : (
-                    comments.map((comment) => renderComment(comment))
+                    comments.map((comment: CommentItem) =>
+                        renderComment(comment),
+                    )
                 )}
             </div>
         </section>

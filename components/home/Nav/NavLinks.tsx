@@ -8,13 +8,14 @@ const links = [
     { href: "/blog", label: "Articles" },
     { href: "/about", label: "About" },
 ];
+type NavLink = (typeof links)[number];
 
 export default function NavLinks() {
     const pathname = usePathname();
 
     return (
         <>
-            {links.map((link) => {
+            {links.map((link: NavLink) => {
                 const isActive =
                     link.href === "/"
                         ? pathname === "/"

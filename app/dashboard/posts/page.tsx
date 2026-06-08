@@ -78,7 +78,7 @@ const MyPostsPage = () => {
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-6">
                 {/* Filter tabs */}
                 <div className="flex items-center gap-1 bg-white border border-[#E0DDD8] rounded-xl p-1">
-                    {(["all", "published", "draft"] as Filter[]).map((f) => (
+                    {(["all", "published", "draft"] as Filter[]).map((f: Filter) => (
                         <button
                             key={f}
                             onClick={() => setFilter(f)}

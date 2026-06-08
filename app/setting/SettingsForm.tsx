@@ -2,7 +2,9 @@
 
 import {
     type ChangeEvent,
+    type Dispatch,
     type FormEvent,
+    type SetStateAction,
     useEffect,
     useRef,
     useState,
@@ -19,6 +21,15 @@ type ProfileResponse = {
     twitter: string | null;
     github: string | null;
     image: string | null;
+};
+
+type SocialField = {
+    id: string;
+    label: string;
+    value: string;
+    onChange: Dispatch<SetStateAction<string>>;
+    placeholder: string;
+    prefix: string;
 };
 
 const SettingsForm = () => {
@@ -302,7 +313,7 @@ const SettingsForm = () => {
                             placeholder: "username",
                             prefix: "GH",
                         },
-                    ].map((field) => (
+                    ].map((field: SocialField) => (
                         <div key={field.id}>
                             <label
                                 htmlFor={field.id}

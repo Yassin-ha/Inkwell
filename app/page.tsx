@@ -61,6 +61,8 @@ const posts = [
     },
 ];
 
+type HomePost = (typeof posts)[number];
+
 const tags = [
     "All",
     "Engineering",
@@ -175,7 +177,7 @@ export default function HomePage() {
             {/* ── Tag Filter ── */}
             <section className="border-b border-[#E0DDD8] px-6 py-4">
                 <div className="mx-auto max-w-6xl flex items-center gap-2 overflow-x-auto scrollbar-hide">
-                    {tags.map((tag, i) => (
+                    {tags.map((tag: string, i: number) => (
                         <button
                             key={tag}
                             className={`whitespace-nowrap px-4 py-1.5 rounded-full text-xs font-medium transition-colors font-sans ${
@@ -210,7 +212,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {posts.map((post, i) => (
+                    {posts.map((post: HomePost, i: number) => (
                         <article
                             key={post.id}
                             className={`group ${i === 0 ? "md:col-span-2" : ""}`}
